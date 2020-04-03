@@ -2,6 +2,27 @@
   #FONTS
 \*------------------------------------*/
 
+@font-face {
+    font-family: "HK Grotesk Web";
+    font-weight: 200;
+    src: ("../fonts/hkgrotesk-light-webfont.woff2") format("woff2");
+    src: ("../fonts/hkgrotesk-light-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "HK Grotesk Web";
+    font-weight: 400;
+    src: ("../fonts/hkgrotesk-light-webfont.woff2") format("woff2");
+    src: ("../fonts/hkgrotesk-light-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "HK Grotesk Web";
+    font-weight: 600;
+    src: ("../fonts/hkgrotesk-light-webfont.woff2") format("woff2");
+    src: ("../fonts/hkgrotesk-light-webfont.woff") format("woff");
+}
+
 /*------------------------------------*\
   #GENERIC
 \*------------------------------------*/
@@ -187,6 +208,13 @@ a:focus {
         padding-bottom: 48px;
     }
 }
+
+/* color modifiers */
+
+.o-row—gradient {
+    background: linear-gradient(to bottom, #5051DB 0%,#3887F7 100%); /* Fx 10+, Op 11.6+, Ch 26+, IE 10 */
+    color: #ffffff;
+  }
 
 /*
     Objects: Container
@@ -442,6 +470,22 @@ a:focus {
 .c-link-cta:hover::before {
     transform:  scaleX(1);
     background-color: #3E3EA8 ;
+}
+
+/* inversed */
+
+.c-link-cta--inverse,
+.c-link-cta--inverse:visited,
+.c-link-cta--inverse:active{
+    color: #ffffff;
+}
+
+.c-link-cta--inverse::after{
+    background-color: #ffffff;
+}
+
+.c-link-cta--inverse:hover::after{
+    background-color: #ffffff;
 }
 
 
